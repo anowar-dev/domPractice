@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to copy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="section1">
+            <div class="sectionHeader">
+                <h2 class="title">Display color</h2>
+                <button class="titleBtn">Random color</button>
+            </div>
+            <div class="divider"></div>
+            <div class="sectionBody">
+                <div class="display"></div>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="sectionHeader">
+                <h2 class="title">Change & copy color</h2>
+                <button class="titleBtn">Copy to clipboard</button>
+            </div>
+            <div class="divider"></div>
+            <div class="sectionBody">
+                <form>
+                    <div class="mode-radio-group">
+                        <h3 class="selectMode">Select copy mode</h3>
+                        <div class="select-grup">
+                            <input type="radio" id="rgb" name="selectMode" value="rgb">
+                            <label for="rgb">RGB</label>
+                            <input type="radio" id="hex" name="selectMode" value="hex">
+                            <label for="hex">Hex</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="hex-code">
+                            <div class="icon">#</div>
+                            <label for="hex-code">Hex</label>
+                            <input type="text" id="hex-input" class="hex-input">
+                        </div>
+                        <div class="rgb-code">
+                            <label for="rgb">RGB</label>
+                            <input type="text" class="rgb-input" id="rgb-input" disabled>
+                        </div>
+                    </div>
+                </form>
+                <div class="colorSlider">
+                    <div class="colorSliderTitle">
+                        <p class="colorSliderContent">Adjust RGB Color</p>
+                    </div>
+                    <div class="colorAdjustBody">
+                        <div class="sliderGroup red">
+                            <div class="sliderText">
+                                <p class="">Red</p>
+                                <p class="">222</p>
+                            </div>
+                            <div class="sliderRange">
+                                <input type="range" min="0" max="255" value="222" class="color-slider" id="colorRange">
+                            </div>
+                        </div>
+                        <div class="sliderGroup green">
+                            <div class="sliderText">
+                                <p class="">Green</p>
+                                <p class="">222</p>
+                            </div>
+                            <div class="sliderRange">
+                                <input type="range" min="0" max="255" value="222" 
+                            class="color-slider" id="colorRange">
+                            </div>
+                        </div>
+                        <div class="sliderGroup blue">
+                            <div class="sliderText">
+                                <p class="">Blue</p>
+                                <p class="">222</p>
+                            </div>
+                            <div class="sliderRange">
+                                <input type="range" min="0" max="255" value="222" 
+                            class="color-slider" id="colorRange">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

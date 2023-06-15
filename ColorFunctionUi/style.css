@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: whitesmoke;
+}
+.container{
+    width: 369px;
+    background: #fff;
+    margin: 20px auto;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .5);
+    padding: 15px;
+    border-radius: 5px;
+}
+.sectionHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    font-size: 18px;
+    font-weight: 600;
+}
+.titleBtn{
+    border-color: transparent;
+    color: rgb(172, 130, 3);
+    background: transparent;
+    font-weight: 700;
+    cursor: pointer;
+}
+.divider{
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+}
+.display{
+    width: 100%;
+    height: 120px;
+    background: #ddd;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.mode-radio-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.selectMode{
+    font-size: 15px;
+    font-weight: 600;
+}
+.input-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.changebtn{
+    margin: 10px auto;
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background: #000;
+    border: 1px solid #fff;
+}
+.copy-btn{
+    cursor: pointer;
+    padding: 3px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#output2{
+    background: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.title{
+    text-shadow: 1px 0px 4px #fff;
+    margin-bottom: 10px;
+}
+.massaget{
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    background: green;
+    box-shadow: 1px 1px 5px 2px yellow;
+    width: fit-content;
+    border-radius: 5px;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 999;
+    cursor: pointer;
+}
+.massaget .spanMassage{
+    border: 1px solid rgb(169, 174, 160);
+    color: white;
+    padding: 4px 8px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 15px;
+    margin-right: 6px;
+    text-shadow: 0px 0 1px blue;
+}
+.tost-massage-slide-in{
+    animation: tost-animation-in .3s ease-in;
+}
+.input-group{
+    position: relative;
+}
+.icon {
+    position: absolute;
+    top: 2px;
+    left: 37%;
+    font-size: 22px;
+    font-weight: 700;
+}
+.tost-massage-slide-out{
+    animation: tost-animation-out .3s ease-in;
+}
+@keyframes tost-animation-in {
+    from{
+        transform: translate(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes tost-animation-out {
+    from{
+        transform: translate(0px);
+        opacity: 1;
+    }
+    to{
+        transform: translate(200px);
+        opacity: 0;
+    }
+}
